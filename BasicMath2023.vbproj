@@ -71,6 +71,7 @@
     <Compile Include="Regression\BasicRegression.vb" />
     <Compile Include="Probability\Probability.vb" />
     <Compile Include="Probability\Statistic.vb" />
+    <Compile Include="Softmax.vb" />
     <Compile Include="Trees\TreeNode.vb" />
     <Compile Include="Trees\BinaryTree\BinaryTree.vb" />
     <Compile Include="Cartesian Coordinate\Cartesian.vb" />
@@ -96,6 +97,7 @@
     <Compile Include="Trees\TrieTree\TrieTree.vb" />
     <Compile Include="Trees\TrieTree\TrieTreeExtensions.vb" />
     <Compile Include="Trees\TRYE\TRYE.vb" />
+    <Compile Include="Tril.vb" />
     <Compile Include="Vector\Vector.vb" />
     <None Include="Probability\readme.md" />
     <None Include="Regression\readme.md" />
