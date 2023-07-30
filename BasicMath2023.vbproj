@@ -67,8 +67,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Encrypt\Caesarcipher.vb" />
     <Compile Include="Regression\BasicRegression.vb" />
     <Compile Include="Probability\Probability.vb" />
+    <Compile Include="Statistic.vb" />
     <Compile Include="Trees\TreeNode.vb" />
     <Compile Include="Trees\BinaryTree\BinaryTree.vb" />
     <Compile Include="Cartesian Coordinate\Cartesian.vb" />

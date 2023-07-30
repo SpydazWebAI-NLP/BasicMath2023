@@ -5,38 +5,6 @@ Namespace MATH_EXTENSIONS
     Namespace MathsExt
 
 
-        Namespace Cypher
-
-            ''' <summary>
-            ''' Caesar cipher, both encoding And decoding.
-            ''' The key Is an Integer from 1 To 25.
-            ''' This cipher rotates (either towards left Or right) the letters Of the alphabet (A To Z).
-            ''' The encoding replaces Each letter With the 1St To 25th Next letter In the alphabet (wrapping Z To A).
-            ''' So key 2 encrypts "HI" To "JK", but key 20 encrypts "HI" To "BC".
-            ''' </summary>
-            Public Class Caesarcipher
-
-                Public Function Encrypt(ch As Char, code As Integer) As Char
-                    If Not Char.IsLetter(ch) Then
-                        Return ch
-                    End If
-
-                    Dim offset = AscW(If(Char.IsUpper(ch), "A"c, "a"c))
-                    Dim test = (AscW(ch) + code - offset) Mod 26 + offset
-                    Return ChrW(test)
-                End Function
-
-                Public Function Encrypt(input As String, code As Integer) As String
-                    Return New String(input.Select(Function(ch) Encrypt(ch, code)).ToArray())
-                End Function
-
-                Public Function Decrypt(input As String, code As Integer) As String
-                    Return Encrypt(input, 26 - code)
-                End Function
-
-            End Class
-
-        End Namespace
 
 
 
@@ -373,50 +341,7 @@ Namespace MATH_EXTENSIONS
 
         End Class
 
-        Namespace AdvancedMath
-            Public Class Statistic
-                Public Frequency As Integer
-                Public ReadOnly RelativeFrequency As Integer = CalcRelativeFrequency()
-                Public ReadOnly RelativeFrequencyPercentage As Integer = CalcRelativeFrequencyPercentage()
-                Public Total_SetItems As Integer
-                Public ItemName As String
-                Public ItemData As Object
 
-                ''' <summary>
-                ''' IE: Frequency = 8 Total = 20 8/20= 0.4
-                ''' </summary>
-                ''' <param name="Frequency"></param>
-                ''' <param name="Total"></param>
-                ''' <returns></returns>
-                Public Shared Function CalcRelativeFrequency(ByRef Frequency As Integer, ByRef Total As Integer) As Integer
-                    'IE: Frequency = 8 Total = 20 8/20= 0.4
-                    Return Frequency / Total
-                End Function
-
-                Private Function CalcRelativeFrequency() As Integer
-                    'IE: Frequency = 8 Total = 20 8/20= 0.4
-                    Return Me.Frequency / Me.Total_SetItems
-                End Function
-
-                ''' <summary>
-                '''    IE: Frequency = 8 Total = 20 8/20= 0.4 * 100 = 40%
-                ''' </summary>
-                ''' <param name="Frequency"></param>
-                ''' <param name="Total"></param>
-                ''' <returns></returns>
-                Public Function CalcRelativeFrequencyPercentage(ByRef Frequency As Integer, ByRef Total As Integer) As Integer
-                    'IE: Frequency = 8 Total = 20 8/20= 0.4 * 100 = 40%
-                    Return Frequency / Total * 100
-                End Function
-
-                Private Function CalcRelativeFrequencyPercentage() As Integer
-                    'IE: Frequency = 8 Total = 20 8/20= 0.4 * 100 = 40%
-                    Return Me.Frequency / Me.Total_SetItems * 100
-                End Function
-
-            End Class
-
-        End Namespace
 
         Namespace Science
             Public Module Conversion_Extensions
