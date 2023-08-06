@@ -72,11 +72,13 @@
     <Compile Include="Probability\Probability.vb" />
     <Compile Include="Probability\Statistic.vb" />
     <Compile Include="Softmax.vb" />
+    <Compile Include="Vector2Tensor\Matrix.vb" />
+    <Compile Include="Vector2Tensor\MultiplyMatrix.vb" />
     <Compile Include="Trees\TreeNode.vb" />
     <Compile Include="Trees\BinaryTree\BinaryTree.vb" />
     <Compile Include="Cartesian Coordinate\Cartesian.vb" />
-    <Compile Include="Tensor\Matrix.vb" />
-    <Compile Include="Tensor\Tensor.vb" />
+    <Compile Include="Tensor2Vector\Matrix.vb" />
+    <Compile Include="Tensor2Vector\Tensor.vb" />
     <Compile Include="Maths.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -93,20 +95,21 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Tensor\Vector.vb" />
+    <Compile Include="Tensor2Vector\Vector.vb" />
     <Compile Include="Trees\TrieTree\TrieTree.vb" />
     <Compile Include="Trees\TrieTree\TrieTreeExtensions.vb" />
     <Compile Include="Trees\TRYE\TRYE.vb" />
     <Compile Include="Tril.vb" />
-    <Compile Include="Vector\Vector.vb" />
+    <Compile Include="Vector2Tensor\Tensor.vb" />
+    <Compile Include="Vector2Tensor\Vector.vb" />
     <None Include="Probability\readme.md" />
     <None Include="Regression\readme.md" />
     <None Include="Trees\BinaryTree\readme.md" />
     <None Include="Cartesian Coordinate\readme.md" />
-    <None Include="Tensor\ReadME.md" />
+    <None Include="Tensor2Vector\ReadME.md" />
     <None Include="Trees\TrieTree\readme.md" />
     <None Include="Trees\TRYE\readme.md" />
-    <None Include="Vector\Readme.md" />
+    <None Include="Vector2Tensor\Readme.md" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
